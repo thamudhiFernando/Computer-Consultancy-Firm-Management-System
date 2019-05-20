@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="645.0" prefWidth="1134.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ac.lk.iit.ComputerConsultancyFirmManagementSystem.controller.ManageEmployeeController">
+   <children>
+      <Label layoutX="874.0" layoutY="73.0" prefHeight="33.0" prefWidth="245.0" text="Computer Consultancy Firm" textFill="#204979">
+         <font>
+            <Font name="SansSerif Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="947.0" layoutY="96.0" prefHeight="33.0" prefWidth="172.0" text="Management System" textFill="#948b8b">
+         <font>
+            <Font name="SansSerif Bold" size="17.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="90.0" fitWidth="144.0" layoutX="972.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icons/logo.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="55.0" layoutY="57.0" prefHeight="33.0" prefWidth="219.0" text="Employees" textFill="#204979">
+         <font>
+            <Font name="SansSerif Bold" size="25.0" />
+         </font>
+      </Label>
+      <Separator layoutX="51.0" layoutY="95.0" prefHeight="3.0" prefWidth="228.0" />
+      <JFXButton id="btnSignIn" fx:id="btnUpdate" layoutX="762.0" layoutY="174.0" onMouseClicked="#btnUpdate_OnMouseClicked" opacity="0.88" prefHeight="44.0" prefWidth="131.0" ripplerFill="#7cdcff" style="-fx-background-color: #204979; -fx-border-color: #019ddd; -fx-cursor: hand;" text="UPDATE" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <ImageView fx:id="imgGoBack" fitHeight="33.0" fitWidth="112.0" layoutX="66.0" layoutY="557.0" onMouseClicked="#imgGoBack_OnMouseClicked" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;">
+         <image>
+            <Image url="@../icons/back-icon.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="108.0" layoutY="138.0" prefHeight="33.0" prefWidth="162.0" text="Employee Details" textFill="#204979">
+         <font>
+            <Font name="SansSerif Bold" size="18.0" />
+         </font>
+      </Label>
+      <JFXTextField id="txtUserName" fx:id="txtTelephone" focusColor="#019ddd" focusTraversable="false" labelFloat="true" layoutX="165.0" layoutY="183.0" prefHeight="33.0" prefWidth="182.0" promptText="Telephone" unFocusColor="#4d4d4d85">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField id="txtUserName" fx:id="txtEmployeeAddress" focusColor="#019ddd" focusTraversable="false" labelFloat="true" layoutX="443.0" layoutY="183.0" prefHeight="33.0" prefWidth="296.0" promptText="Address" unFocusColor="#4d4d4d84">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXTextField>
+      <AnchorPane layoutX="108.0" layoutY="239.0" prefHeight="300.0" prefWidth="939.0" style="-fx-background-color: #204979;">
+         <children>
+            <TableView fx:id="tblEmployee" layoutX="3.0" layoutY="5.0" prefHeight="293.0" prefWidth="929.0">
+              <columns>
+                <TableColumn fx:id="tblClmEmployeeID" prefWidth="83.0" text="Employee ID" />
+                <TableColumn fx:id="tblClmEmployeeType" prefWidth="159.0" text="Employee Type" />
+                  <TableColumn fx:id="tblClmEmployeeName" prefWidth="207.0" text="Employee Name" />
+                  <TableColumn fx:id="tblClmNIC" prefWidth="84.0" text="NIC" />
+                  <TableColumn fx:id="tblClmAddress" prefWidth="281.0" text="Address" />
+                  <TableColumn fx:id="tblClmTelephone" prefWidth="114.0" text="Telephone" />
+              </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

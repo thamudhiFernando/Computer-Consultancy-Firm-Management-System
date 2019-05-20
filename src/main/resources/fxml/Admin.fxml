@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="646.0" prefWidth="1133.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ac.lk.iit.ComputerConsultancyFirmManagementSystem.controller.AdminControllerImpl">
+   <children>
+      <Label layoutX="874.0" layoutY="73.0" prefHeight="33.0" prefWidth="245.0" text="Computer Consultancy Firm" textFill="#204979">
+         <font>
+            <Font name="SansSerif Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="947.0" layoutY="96.0" prefHeight="33.0" prefWidth="172.0" text="Management System" textFill="#948b8b">
+         <font>
+            <Font name="SansSerif Bold" size="17.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="90.0" fitWidth="144.0" layoutX="972.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icons/logo.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgLogOut" fitHeight="68.0" fitWidth="135.0" layoutX="37.0" layoutY="544.0" onMouseClicked="#imgLogOut_OnMouseClicked" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;">
+         <image>
+            <Image url="@../icons/240_F_55779132_5RpV4X5SSiNLHFTufpXoO4OSS30ZS8hO.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="112.0" layoutY="227.0" prefHeight="57.0" prefWidth="212.0" style="-fx-background-color: #204979;">
+         <children>
+            <Label fx:id="lblAddEmployee" alignment="CENTER" onMouseClicked="#lblAddEmployee_OnMouseClicked" prefHeight="63.0" prefWidth="212.0" style="-fx-cursor: hand;" text="Add Employee" textFill="WHITE">
+               <font>
+                  <Font name="SansSerif Bold" size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="402.0" layoutY="228.0" prefHeight="63.0" prefWidth="308.0" style="-fx-background-color: #204979;">
+         <children>
+            <Label fx:id="lblMakeEmployeeSalary" alignment="CENTER" layoutX="4.0" layoutY="-1.0" onMouseClicked="#lblMakeEmployeeSalary_OnMouseClicked" prefHeight="63.0" prefWidth="308.0" style="-fx-cursor: hand;" text="Make Employee Salary" textFill="WHITE">
+               <font>
+                  <Font name="SansSerif Bold" size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="402.0" layoutY="426.0" prefHeight="63.0" prefWidth="308.0" style="-fx-background-color: #204979;">
+         <children>
+            <Label fx:id="btnManageEmployees" alignment="CENTER" onMouseClicked="#btnManageEmployees_OnMouseClicked" prefHeight="63.0" prefWidth="274.0" style="-fx-cursor: hand;" text="Manage Employees" textFill="WHITE">
+               <font>
+                  <Font name="SansSerif Bold" size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="789.0" layoutY="223.0" prefHeight="63.0" prefWidth="233.0" style="-fx-background-color: #204979;">
+         <children>
+            <Label fx:id="btnMakeContract" alignment="CENTER" contentDisplay="CENTER" layoutX="-3.0" onMouseClicked="#btnMakeContract_OnMouseClicked" prefHeight="66.0" prefWidth="245.0" style="-fx-cursor: hand;" text="Make Contract" textFill="WHITE">
+               <font>
+                  <Font name="SansSerif Bold" size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="112.0" layoutY="428.0" prefHeight="57.0" prefWidth="212.0" style="-fx-background-color: #204979;">
+         <children>
+            <Label fx:id="btnViewContracts" alignment="CENTER" onMouseClicked="#btnViewContracts_OnMouseClicked" prefHeight="58.0" prefWidth="212.0" style="-fx-cursor: hand;" text="View Contracts" textFill="WHITE">
+               <font>
+                  <Font name="SansSerif Bold" size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="789.0" layoutY="426.0" prefHeight="63.0" prefWidth="245.0" style="-fx-background-color: #204979;">
+         <children>
+            <Label fx:id="btnManageCustomers" alignment="CENTER" layoutY="-3.0" onMouseClicked="#btnManageCustomers_OnMouseClicked" prefHeight="66.0" prefWidth="245.0" style="-fx-cursor: hand;" text="Manage Customers" textFill="WHITE">
+               <font>
+                  <Font name="SansSerif Bold" size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

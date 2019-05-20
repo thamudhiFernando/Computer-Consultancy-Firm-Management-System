@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="646.0" prefWidth="1133.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ac.lk.iit.ComputerConsultancyFirmManagementSystem.controller.SettleEmployeeSalaryController">
+   <children>
+      <Label layoutX="874.0" layoutY="73.0" prefHeight="33.0" prefWidth="245.0" text="Computer Consultancy Firm" textFill="#204979">
+         <font>
+            <Font name="SansSerif Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="947.0" layoutY="96.0" prefHeight="33.0" prefWidth="172.0" text="Management System" textFill="#948b8b">
+         <font>
+            <Font name="SansSerif Bold" size="17.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="90.0" fitWidth="144.0" layoutX="972.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icons/logo.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="55.0" layoutY="57.0" prefHeight="33.0" prefWidth="219.0" text="Employee Salary" textFill="#204979">
+         <font>
+            <Font name="SansSerif Bold" size="25.0" />
+         </font>
+      </Label>
+      <Separator layoutX="51.0" layoutY="95.0" prefHeight="3.0" prefWidth="228.0" />
+      <JFXButton id="btnSignIn" fx:id="btnSubmit" layoutX="890.0" layoutY="550.0" onMouseClicked="#btnSubmit_OnMouseClicked" opacity="0.88" prefHeight="45.0" prefWidth="191.0" ripplerFill="#7cdcff" style="-fx-background-color: #204979; -fx-border-color: #019ddd; -fx-cursor: hand;" text="Submit &amp; Print" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <ImageView fx:id="imgGoBack" fitHeight="33.0" fitWidth="112.0" layoutX="66.0" layoutY="557.0" onMouseClicked="#imgGoBack_OnMouseClicked" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;">
+         <image>
+            <Image url="@../icons/back-icon.png" />
+         </image>
+      </ImageView>
+      <JFXComboBox fx:id="comboEmployeeName" focusColor="#019ddd" labelFloat="true" layoutX="285.0" layoutY="169.0" onMouseClicked="#comboEmployeeName_OnMouseClicked" prefHeight="32.0" prefWidth="191.0" promptText="select" style="-fx-cursor: hand;" unFocusColor="#4d4d4d85" visibleRowCount="2" />
+      <Label layoutX="107.0" layoutY="126.0" prefHeight="33.0" prefWidth="162.0" text="Employee Details" textFill="#204979">
+         <font>
+            <Font name="SansSerif Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="163.0" layoutY="168.0" prefHeight="32.0" prefWidth="121.0" text="Employee Name" textFill="#000000cc">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <JFXTextField id="txtUserName" fx:id="txtPosition" focusColor="#019ddd" focusTraversable="false" labelFloat="true" layoutX="521.0" layoutY="170.0" prefHeight="33.0" prefWidth="200.0" promptText="Position" unFocusColor="#4d4d4d84">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField id="txtUserName" fx:id="txtNIC" focusColor="#019ddd" focusTraversable="false" labelFloat="true" layoutX="776.0" layoutY="170.0" prefHeight="33.0" prefWidth="151.0" promptText="NIC" unFocusColor="#4d4d4d84">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXTextField>
+      <Label layoutX="107.0" layoutY="234.0" prefHeight="33.0" prefWidth="162.0" text="Payment Details" textFill="#204979">
+         <font>
+            <Font name="SansSerif Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="162.0" layoutY="295.0" prefHeight="32.0" prefWidth="151.0" text="Hardware Technician" textFill="#000000cc">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="162.0" layoutY="343.0" prefHeight="32.0" prefWidth="151.0" text="Programmer" textFill="#000000cc">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="162.0" layoutY="391.0" prefHeight="32.0" prefWidth="151.0" text="Software Installer" textFill="#000000cc">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <JFXTextField id="txtUserName" fx:id="txtHT_hour" alignment="CENTER" focusColor="#019ddd" labelFloat="true" layoutX="384.0" layoutY="295.0" onAction="#txtHT_hour_OnAction" prefHeight="33.0" prefWidth="39.0" promptText="hours" unFocusColor="#4d4d4d84">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXTextField>
+      <Label alignment="CENTER" focusTraversable="false" layoutX="360.0" layoutY="253.0" prefHeight="32.0" prefWidth="110.0" text="Working Hours" textFill="#979494cc">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <JFXTextField id="txtUserName" fx:id="txtHT_hourlyPayment" alignment="CENTER" editable="false" focusColor="#019ddd" focusTraversable="false" labelFloat="true" layoutX="530.0" layoutY="295.0" prefHeight="33.0" prefWidth="90.0" unFocusColor="#4d4d4d84">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXTextField>
+      <Label alignment="CENTER" focusTraversable="false" layoutX="518.0" layoutY="253.0" prefHeight="32.0" prefWidth="121.0" text="Hourly Payment" textFill="#979494cc">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label focusTraversable="false" layoutX="485.0" layoutY="294.0" prefHeight="32.0" prefWidth="23.0" text="x" textFill="#979494cc">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <Label focusTraversable="false" layoutX="666.0" layoutY="294.0" prefHeight="32.0" prefWidth="23.0" text="=" textFill="#979494cc">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <JFXTextField id="txtUserName" fx:id="txtHT_amount" alignment="CENTER" editable="false" focusColor="#019ddd" focusTraversable="false" labelFloat="true" layoutX="727.0" layoutY="297.0" prefHeight="33.0" prefWidth="101.0" unFocusColor="#4d4d4d84">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXTextField>
+      <Label alignment="CENTER" focusTraversable="false" layoutX="715.0" layoutY="255.0" prefHeight="32.0" prefWidth="121.0" text="Amount" textFill="#979494cc">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <JFXTextField id="txtUserName" fx:id="txtP_hour" alignment="CENTER" focusColor="#019ddd" labelFloat="true" layoutX="384.0" layoutY="343.0" onAction="#txtP_hour_OnAction" prefHeight="33.0" prefWidth="39.0" promptText="hours" unFocusColor="#4d4d4d84">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField id="txtUserName" fx:id="txtP_hourlyPayment" alignment="CENTER" editable="false" focusColor="#019ddd" focusTraversable="false" labelFloat="true" layoutX="530.0" layoutY="343.0" prefHeight="33.0" prefWidth="90.0" unFocusColor="#4d4d4d84">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXTextField>
+      <Label focusTraversable="false" layoutX="485.0" layoutY="342.0" prefHeight="32.0" prefWidth="23.0" text="x" textFill="#979494cc">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <Label focusTraversable="false" layoutX="666.0" layoutY="342.0" prefHeight="32.0" prefWidth="23.0" text="=" textFill="#979494cc">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <JFXTextField id="txtUserName" fx:id="txtP_amount" alignment="CENTER" editable="false" focusColor="#019ddd" focusTraversable="false" labelFloat="true" layoutX="727.0" layoutY="345.0" prefHeight="33.0" prefWidth="101.0" unFocusColor="#4d4d4d84">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField id="txtUserName" fx:id="txtST_hour" alignment="CENTER" focusColor="#019ddd" labelFloat="true" layoutX="384.0" layoutY="393.0" onAction="#txtST_hour_OnAction" prefHeight="33.0" prefWidth="39.0" promptText="hours" unFocusColor="#4d4d4d84">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField id="txtUserName" fx:id="txtST_hourlyPayment" alignment="CENTER" editable="false" focusColor="#019ddd" focusTraversable="false" labelFloat="true" layoutX="530.0" layoutY="393.0" prefHeight="33.0" prefWidth="90.0" unFocusColor="#4d4d4d84">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXTextField>
+      <Label focusTraversable="false" layoutX="485.0" layoutY="392.0" prefHeight="32.0" prefWidth="23.0" text="x" textFill="#979494cc">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <Label focusTraversable="false" layoutX="666.0" layoutY="392.0" prefHeight="32.0" prefWidth="23.0" text="=" textFill="#979494cc">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <JFXTextField id="txtUserName" fx:id="txtST_amount" alignment="CENTER" editable="false" focusColor="#019ddd" focusTraversable="false" labelFloat="true" layoutX="727.0" layoutY="395.0" prefHeight="33.0" prefWidth="101.0" unFocusColor="#4d4d4d84">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXTextField>
+      <Label layoutX="107.0" layoutY="445.0" prefHeight="33.0" prefWidth="219.0" text="Final Payment Summery" textFill="#204979">
+         <font>
+            <Font name="SansSerif Bold" size="18.0" />
+         </font>
+      </Label>
+      <JFXTextField id="txtUserName" fx:id="txtPaymentDate" editable="false" focusColor="#019ddd" focusTraversable="false" labelFloat="true" layoutX="160.0" layoutY="494.0" prefHeight="33.0" prefWidth="151.0" promptText="Payment Date" unFocusColor="#4d4d4d84">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField id="txtUserName" fx:id="txtEmployeeSalaryAmount" editable="false" focusColor="#019ddd" focusTraversable="false" labelFloat="true" layoutX="381.0" layoutY="477.0" prefHeight="52.0" prefWidth="256.0" promptText="Total Payment Amount" unFocusColor="#bc2525">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </JFXTextField>
+   </children>
+</AnchorPane>

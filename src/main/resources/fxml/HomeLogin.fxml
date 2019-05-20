@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="idPane" prefHeight="646.0" prefWidth="1133.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ac.lk.iit.ComputerConsultancyFirmManagementSystem.controller.HomeLoginControllerImpl">
+   <children>
+      <Label layoutX="29.0" layoutY="251.0" prefHeight="73.0" prefWidth="660.0" text="Computer Consultancy Firm" textFill="#204979">
+         <font>
+            <Font name="SansSerif Bold" size="49.0" />
+         </font>
+      </Label>
+      <Label layoutX="34.0" layoutY="377.0" prefHeight="33.0" prefWidth="283.0" text="M A N A G E M E N  T   S Y S T E M" textFill="#274c79">
+         <font>
+            <Font name="SansSerif Bold" size="17.0" />
+         </font>
+      </Label>
+      <JFXButton id="btnSignIn" fx:id="btnRegistration" layoutX="34.0" layoutY="419.0" onMouseClicked="#btnRegistration_OnMouseClicked" opacity="0.88" prefHeight="45.0" prefWidth="125.0" ripplerFill="#7cdcff" style="-fx-background-color: #204979; -fx-border-color: #019ddd; -fx-cursor: hand;" text="REGISTER" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Label layoutX="34.0" layoutY="318.0" prefHeight="17.0" prefWidth="649.0" text="This Application is developed to keep the cost low for a small computer consultancy firm with a" textFill="#9fa2a8">
+         <font>
+            <Font name="SansSerif Regular" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="34.0" layoutY="336.0" prefHeight="14.0" prefWidth="649.0" text="number of employees. In management, as a field of activity focuses on advising organizations" textFill="#9fa2a8">
+         <font>
+            <Font name="SansSerif Regular" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="34.0" layoutY="353.0" prefHeight="17.0" prefWidth="649.0" text="on how best to use information technology(IT) in achieving their business objectives." textFill="#9fa2a8">
+         <font>
+            <Font name="SansSerif Regular" size="15.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="755.0" layoutY="-1.0" prefHeight="650.0" prefWidth="379.0" style="-fx-background-color: #204979;">
+         <children>
+            <ImageView fitHeight="88.0" fitWidth="208.0" layoutX="170.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icons/logo.png" />
+               </image>
+            </ImageView>
+            <JFXButton id="btnSignIn" fx:id="btnSignIn" layoutX="57.0" layoutY="457.0" onMouseClicked="#btnSignIn_OnMouseClicked" opacity="0.88" prefHeight="45.0" prefWidth="125.0" ripplerFill="WHITE" style="-fx-background-color: #204979; -fx-border-color: white; -fx-cursor: hand;" text="SIGN IN" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXTextField id="txtLoginUserName" fx:id="txtLoginUserName" focusColor="WHITE" labelFloat="true" layoutX="53.0" layoutY="295.0" prefHeight="33.0" prefWidth="254.0" unFocusColor="#ffffff85">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXTextField>
+            <Label layoutX="53.0" layoutY="264.0" prefHeight="33.0" prefWidth="112.0" text="Username" textFill="#e1dddd">
+               <font>
+                  <Font name="SansSerif Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="53.0" layoutY="360.0" prefHeight="33.0" prefWidth="112.0" text="Password" textFill="#e1dddd">
+               <font>
+                  <Font name="SansSerif Bold" size="18.0" />
+               </font>
+            </Label>
+            <JFXPasswordField fx:id="txtLoginUserPassword" focusColor="WHITE" layoutX="53.0" layoutY="397.0" prefHeight="33.0" prefWidth="254.0" unFocusColor="#b2abab">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXPasswordField>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="512.0" prefHeight="45.0" prefWidth="755.0" style="-fx-background-color: #204979;" />
+   </children>
+</AnchorPane>

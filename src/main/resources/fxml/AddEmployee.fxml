@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="646.0" prefWidth="1133.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ac.lk.iit.ComputerConsultancyFirmManagementSystem.controller.AddEmployeeControllerImpl">
+    <children>
+
+        <Label layoutX="874.0" layoutY="73.0" prefHeight="33.0" prefWidth="245.0" text="Computer Consultancy Firm" textFill="#204979">
+            <font>
+                <Font name="SansSerif Bold" size="18.0" />
+            </font>
+        </Label>
+        <Label layoutX="947.0" layoutY="96.0" prefHeight="33.0" prefWidth="172.0" text="Management System" textFill="#948b8b">
+            <font>
+                <Font name="SansSerif Bold" size="17.0" />
+            </font>
+        </Label>
+        <ImageView fitHeight="90.0" fitWidth="144.0" layoutX="972.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../icons/logo.png" />
+            </image>
+        </ImageView>
+      <Label layoutX="133.0" layoutY="249.0" prefHeight="33.0" prefWidth="144.0" text="Personal Details" textFill="#204979">
+         <font>
+            <Font name="SansSerif Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="133.0" layoutY="358.0" prefHeight="33.0" prefWidth="144.0" text="Contact Details" textFill="#204979">
+         <font>
+            <Font name="SansSerif Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="55.0" layoutY="57.0" prefHeight="33.0" prefWidth="191.0" text="New Employee" textFill="#204979">
+         <font>
+            <Font name="SansSerif Bold" size="25.0" />
+         </font>
+      </Label>
+      <Separator layoutX="51.0" layoutY="95.0" prefWidth="200.0" />
+      <JFXTextField id="txtUserName" fx:id="txtEmployeeID" focusColor="#019ddd" labelFloat="true" layoutX="183.0" layoutY="197.0" prefHeight="33.0" prefWidth="182.0" promptText="Employee ID" unFocusColor="#4a474785">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXComboBox fx:id="comboPositions" focusColor="#019ddd" labelFloat="true" layoutX="584.0" layoutY="198.0" onMouseClicked="#comboCompanies_OnMouseClicked" prefHeight="32.0" prefWidth="172.0" promptText="select" style="-fx-cursor: hand;" unFocusColor="#4d4d4d85" visibleRowCount="2" />
+      <JFXTextField id="txtUserName" fx:id="txtNIC" focusColor="#019ddd" labelFloat="true" layoutX="183.0" layoutY="301.0" prefHeight="33.0" prefWidth="182.0" promptText="NIC" unFocusColor="#4a474785">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField id="txtUserName" fx:id="txtEmployeeName" focusColor="#019ddd" labelFloat="true" layoutX="461.0" layoutY="301.0" prefHeight="33.0" prefWidth="296.0" promptText="Employee Name" unFocusColor="#4d4d4d84">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField id="txtUserName" fx:id="txtTelephone" focusColor="#019ddd" labelFloat="true" layoutX="183.0" layoutY="412.0" prefHeight="33.0" prefWidth="182.0" promptText="Telephone" unFocusColor="#4d4d4d85">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField id="txtUserName" fx:id="txtUserAddress" focusColor="#019ddd" labelFloat="true" layoutX="461.0" layoutY="412.0" prefHeight="33.0" prefWidth="296.0" promptText="Address" unFocusColor="#4d4d4d84">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton id="btnSignIn" fx:id="btnAddEmployee" layoutX="852.0" layoutY="532.0" onMouseClicked="#btnAddEmployee_OnMouseClicked" opacity="0.88" prefHeight="45.0" prefWidth="191.0" ripplerFill="#7cdcff" style="-fx-background-color: #204979; -fx-border-color: #019ddd; -fx-cursor: hand;" text="REGISTER" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Label layoutX="133.0" layoutY="145.0" prefHeight="33.0" prefWidth="144.0" text="Official  Details" textFill="#204979">
+         <font>
+            <Font name="SansSerif Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="461.0" layoutY="197.0" prefHeight="32.0" prefWidth="162.0" text="Employee Type" textFill="#000000cc">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="imgGoBack" fitHeight="33.0" fitWidth="112.0" layoutX="72.0" layoutY="548.0" onMouseClicked="#imgGoBack_OnMouseClicked" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;">
+         <image>
+            <Image url="@../icons/back-icon.png" />
+         </image>
+      </ImageView>
+    </children>
+</AnchorPane>

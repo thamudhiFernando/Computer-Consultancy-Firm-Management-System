@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="646.0" prefWidth="1133.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ac.lk.iit.ComputerConsultancyFirmManagementSystem.controller.ManageContractController">
+   <children>
+      <Label layoutX="874.0" layoutY="73.0" prefHeight="33.0" prefWidth="245.0" text="Computer Consultancy Firm" textFill="#204979">
+         <font>
+            <Font name="SansSerif Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="947.0" layoutY="96.0" prefHeight="33.0" prefWidth="172.0" text="Management System" textFill="#948b8b">
+         <font>
+            <Font name="SansSerif Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="55.0" layoutY="57.0" prefHeight="33.0" prefWidth="219.0" text="Contracts" textFill="#204979">
+         <font>
+            <Font name="SansSerif Bold" size="25.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="90.0" fitWidth="144.0" layoutX="972.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icons/logo.png" />
+         </image>
+      </ImageView>
+      <Separator layoutX="51.0" layoutY="95.0" prefHeight="3.0" prefWidth="228.0" />
+      <ImageView fx:id="imgGoBack" fitHeight="33.0" fitWidth="112.0" layoutX="66.0" layoutY="563.0" onMouseClicked="#imgGoBack_OnMouseClicked" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;">
+         <image>
+            <Image url="@../icons/back-icon.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="86.0" layoutY="123.0" prefHeight="33.0" prefWidth="162.0" text="Contract Details" textFill="#204979">
+         <font>
+            <Font name="SansSerif Bold" size="18.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="85.0" layoutY="168.0" prefHeight="374.0" prefWidth="992.0" style="-fx-background-color: #204979;">
+         <children>
+            <TableView fx:id="tblContracts" layoutX="3.0" layoutY="3.0" prefHeight="367.0" prefWidth="984.0">
+               <columns>
+                  <TableColumn fx:id="tblClmContractID" prefWidth="72.0" text="Contract ID" />
+                  <TableColumn fx:id="tblClmEmployeeID" prefWidth="76.0" text="Employee ID" />
+                  <TableColumn fx:id="tblClmContractName" prefWidth="104.0" text="Contract Name" />
+                  <TableColumn fx:id="tblClmDescriptions" prefWidth="153.0" text="Descriptions" />
+                  <TableColumn fx:id="tblClmServiceType" prefWidth="144.0" text="Service Type" />
+                  <TableColumn fx:id="tblClmEmployeeName" prefWidth="123.0" text="Employee Name" />
+                  <TableColumn fx:id="tblClmCreationDate" prefWidth="85.0" text="Creation Date" />
+                  <TableColumn fx:id="tblClmCustomerNIC" prefWidth="86.0" text="Customer NIC" />
+                  <TableColumn fx:id="tblClmCustomerName" prefWidth="137.0" text="Customer Name" />
+               </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

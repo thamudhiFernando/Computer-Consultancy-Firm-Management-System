@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="646.0" prefWidth="1133.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ac.lk.iit.ComputerConsultancyFirmManagementSystem.controller.ContractController">
+   <children>
+      <Label layoutX="874.0" layoutY="73.0" prefHeight="33.0" prefWidth="245.0" text="Computer Consultancy Firm" textFill="#204979">
+         <font>
+            <Font name="SansSerif Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="947.0" layoutY="96.0" prefHeight="33.0" prefWidth="172.0" text="Management System" textFill="#948b8b">
+         <font>
+            <Font name="SansSerif Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="55.0" layoutY="57.0" prefHeight="33.0" prefWidth="219.0" text="Contract" textFill="#204979">
+         <font>
+            <Font name="SansSerif Bold" size="25.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="90.0" fitWidth="144.0" layoutX="972.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icons/logo.png" />
+         </image>
+      </ImageView>
+      <Separator layoutX="51.0" layoutY="95.0" prefHeight="3.0" prefWidth="228.0" />
+      <JFXButton id="btnSignIn" fx:id="btnSubmit" layoutX="870.0" layoutY="559.0" onMouseClicked="#btnSubmit_OnMouseClicked" opacity="0.88" prefHeight="45.0" prefWidth="191.0" ripplerFill="#7cdcff" style="-fx-background-color: #204979; -fx-border-color: #019ddd; -fx-cursor: hand;" text="Make Contract" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <ImageView fx:id="imgGoBack" fitHeight="33.0" fitWidth="112.0" layoutX="55.0" layoutY="565.0" onMouseClicked="#imgGoBack_OnMouseClicked" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;">
+         <image>
+            <Image url="@../icons/back-icon.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="109.0" layoutY="113.0" prefHeight="33.0" prefWidth="162.0" text="Contract Details" textFill="#204979">
+         <font>
+            <Font name="SansSerif Bold" size="18.0" />
+         </font>
+      </Label>
+      <JFXTextField id="txtUserName" fx:id="txtContractID" focusColor="#019ddd" labelFloat="true" layoutX="153.0" layoutY="152.0" prefHeight="33.0" prefWidth="129.0" promptText="Contract ID" unFocusColor="#4d4d4d85">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField id="txtUserName" fx:id="txtContractDate" editable="false" focusColor="#019ddd" focusTraversable="false" labelFloat="true" layoutX="362.0" layoutY="152.0" prefHeight="33.0" prefWidth="206.0" promptText="Contract Date" unFocusColor="#4d4d4d84">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXTextField>
+      <Label layoutX="110.0" layoutY="443.0" prefHeight="33.0" prefWidth="162.0" text="Customer Details" textFill="#204979">
+         <font>
+            <Font name="SansSerif Bold" size="18.0" />
+         </font>
+      </Label>
+      <JFXTextField id="txtUserName" fx:id="txtCustomerNIC" focusColor="#019ddd" focusTraversable="false" labelFloat="true" layoutX="154.0" layoutY="483.0" prefHeight="33.0" prefWidth="129.0" promptText="Customer NIC" unFocusColor="#4d4d4d85">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField id="txtUserName" fx:id="txtCustomerName" focusColor="#019ddd" focusTraversable="false" labelFloat="true" layoutX="361.0" layoutY="483.0" prefHeight="33.0" prefWidth="206.0" promptText="Customer Name" unFocusColor="#4d4d4d84">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField id="txtUserName" fx:id="txtAddress" focusColor="#019ddd" focusTraversable="false" labelFloat="true" layoutX="614.0" layoutY="483.0" prefHeight="33.0" prefWidth="284.0" promptText="Address" unFocusColor="#4d4d4d84">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField id="txtUserName" fx:id="txtContact" focusColor="#019ddd" focusTraversable="false" labelFloat="true" layoutX="932.0" layoutY="483.0" prefHeight="33.0" prefWidth="129.0" promptText="Contact" unFocusColor="#4d4d4d84">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXTextField>
+      <AnchorPane layoutX="109.0" layoutY="199.0" prefHeight="213.0" prefWidth="980.0" style="-fx-background-color: #204979;">
+         <children>
+            <AnchorPane layoutX="4.0" layoutY="4.0" prefHeight="205.0" prefWidth="971.0" style="-fx-background-color: white;">
+               <children>
+                  <Label fx:id="txtSystemDevelopment" layoutX="582.0" layoutY="54.0" prefHeight="32.0" prefWidth="151.0" text="System Development" textFill="#000000cc">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="txtSoftwareUpgrade" layoutX="582.0" layoutY="105.0" prefHeight="32.0" prefWidth="151.0" text="Software Upgrade" textFill="#000000cc">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="txtDataRecovery" layoutX="582.0" layoutY="153.0" prefHeight="32.0" prefWidth="151.0" text="Data Recovery" textFill="#000000cc">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label focusTraversable="false" layoutX="582.0" layoutY="11.0" prefHeight="32.0" prefWidth="121.0" text="Service Type" textFill="#979494cc">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label focusTraversable="false" layoutX="768.0" layoutY="11.0" prefHeight="32.0" prefWidth="129.0" text="Project Leader" textFill="#979494cc">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <JFXComboBox fx:id="comboLeaderFor_SD" focusColor="#019ddd" labelFloat="true" layoutX="768.0" layoutY="50.0" prefHeight="32.0" prefWidth="184.0" promptText="select" style="-fx-cursor: hand;" unFocusColor="#4d4d4d85" visibleRowCount="2" />
+                  <JFXComboBox fx:id="comboLeaderFor_SU" focusColor="#019ddd" labelFloat="true" layoutX="768.0" layoutY="99.0" prefHeight="32.0" prefWidth="184.0" promptText="select" style="-fx-cursor: hand;" unFocusColor="#4d4d4d85" visibleRowCount="2" />
+                  <JFXComboBox fx:id="comboLeaderFor_DR" focusColor="#019ddd" labelFloat="true" layoutX="768.0" layoutY="149.0" prefHeight="32.0" prefWidth="184.0" promptText="select" style="-fx-cursor: hand;" unFocusColor="#4d4d4d85" visibleRowCount="2" />
+                  <Label alignment="CENTER" focusTraversable="false" layoutX="4.0" layoutY="11.0" prefHeight="32.0" prefWidth="68.0" text="Name" textFill="#979494cc">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label focusTraversable="false" layoutX="170.0" layoutY="11.0" prefHeight="32.0" prefWidth="110.0" text="Descriptions" textFill="#979494cc">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label focusTraversable="false" layoutX="414.0" layoutY="11.0" prefHeight="32.0" prefWidth="144.0" text="Creation Date" textFill="#979494cc">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <JFXTextField id="txtUserName" fx:id="txtDescriptions_SD" focusColor="#019ddd" focusTraversable="false" labelFloat="true" layoutX="169.0" layoutY="50.0" prefHeight="33.0" prefWidth="206.0" promptText="Enter" unFocusColor="#4d4d4d84">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField id="txtUserName" fx:id="txtDescriptions_SU" focusColor="#019ddd" focusTraversable="false" labelFloat="true" layoutX="169.0" layoutY="98.0" prefHeight="33.0" prefWidth="206.0" promptText="Enter" unFocusColor="#4d4d4d84">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField id="txtUserName" fx:id="txtDescriptions_DR" focusColor="#019ddd" focusTraversable="false" labelFloat="true" layoutX="169.0" layoutY="145.0" prefHeight="33.0" prefWidth="206.0" promptText="Enter" unFocusColor="#4d4d4d84">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField id="txtUserName" fx:id="txtName_SD" focusColor="#019ddd" focusTraversable="false" labelFloat="true" layoutX="15.0" layoutY="50.0" prefHeight="33.0" prefWidth="110.0" promptText="Enter" unFocusColor="#4d4d4d84">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField id="txtUserName" fx:id="txtName_SU" focusColor="#019ddd" focusTraversable="false" labelFloat="true" layoutX="15.0" layoutY="97.0" prefHeight="33.0" prefWidth="110.0" promptText="Enter" unFocusColor="#4d4d4d84">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField id="txtUserName" fx:id="txtName_DR" focusColor="#019ddd" focusTraversable="false" labelFloat="true" layoutX="15.0" layoutY="144.0" prefHeight="33.0" prefWidth="110.0" promptText="Enter" unFocusColor="#4d4d4d84">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXDatePicker fx:id="dateCreationDate_SD" layoutX="415.0" layoutY="55.0" prefHeight="28.0" prefWidth="129.0" style="-fx-cursor: hand;" />
+                  <JFXDatePicker fx:id="dateCreationDate_SU" layoutX="416.0" layoutY="102.0" prefHeight="28.0" prefWidth="129.0" style="-fx-cursor: hand;" />
+                  <JFXDatePicker fx:id="dateCreationDate_DR" layoutX="416.0" layoutY="149.0" prefHeight="28.0" prefWidth="129.0" style="-fx-cursor: hand;" />
+                  <Separator layoutX="158.0" layoutY="26.0" orientation="VERTICAL" prefHeight="155.0" prefWidth="6.0" />
+                  <Separator layoutX="405.0" layoutY="26.0" orientation="VERTICAL" prefHeight="155.0" prefWidth="6.0" />
+                  <Separator layoutX="572.0" layoutY="27.0" orientation="VERTICAL" prefHeight="155.0" prefWidth="6.0" />
+                  <Separator layoutX="757.0" layoutY="28.0" orientation="VERTICAL" prefHeight="155.0" prefWidth="6.0" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <ImageView fx:id="imgSearchCustomer" fitHeight="33.0" fitWidth="39.0" layoutX="283.0" layoutY="483.0" onMouseClicked="#imgSearchCustomer_OnClickedMouse" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;">
+         <image>
+            <Image url="@../icons/search-icon-md.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
